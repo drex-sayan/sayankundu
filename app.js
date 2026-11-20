@@ -479,22 +479,37 @@ function initProjectsCardStack() {
     isDragging = false;
   });
 
-  // Auto advance
+  // Auto advance (Desktop only - completely disabled on mobile interface)
   function startAutoAdvance() {
     stopAutoAdvance();
+    const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 768;
+    if (isMobile) return;
     autoAdvanceTimer = setInterval(() => {
       if (!isHovering) next();
     }, 3600);
   }
 
   function stopAutoAdvance() {
-    if (autoAdvanceTimer) clearInterval(autoAdvanceTimer);
+    if (autoAdvanceTimer) {
+      clearInterval(autoAdvanceTimer);
+      autoAdvanceTimer = null;
+    }
   }
 
   arena.addEventListener('mouseenter', () => { isHovering = true; });
   arena.addEventListener('mouseleave', () => { isHovering = false; });
 
   startAutoAdvance();
+
+  window.addEventListener('resize', () => {
+    const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 768;
+    if (isMobile) {
+      stopAutoAdvance();
+    } else if (!autoAdvanceTimer) {
+      startAutoAdvance();
+    }
+    renderStack();
+  });
 
   // View toggle (3D Card Stack vs 2x2 Grid)
   if (viewToggleStack && viewToggleGrid && stackView && gridView) {
@@ -620,7 +635,24 @@ function initProfileFlipCards() {
       if (e.target.closest('a') || e.target.closest('button')) {
         return;
       }
-      card.classList.toggle('is-flipped');
+
+      const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 768;
+      const isCurrentlyFlipped = card.classList.contains('is-flipped');
+
+      if (isMobile) {
+        // If clicking the already open card on mobile, close it
+        if (isCurrentlyFlipped) {
+          card.classList.remove('is-flipped');
+        } else {
+          // If clicking an unopened card on mobile, close other cards and open this one
+          cards.forEach(c => c.classList.remove('is-flipped'));
+          card.classList.add('is-flipped');
+        }
+      } else {
+        // Desktop toggle
+        card.classList.toggle('is-flipped');
+      }
+
       if (typeof playMechanicalClick === 'function') {
         playMechanicalClick();
       }
@@ -972,8 +1004,26 @@ function initMobileMenu() {
   });
 
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      closeMenu();
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.replace('#', '');
+        const targetEl = document.getElementById(targetId);
+        closeMenu();
+        if (targetEl) {
+          const navHeight = 68;
+          const targetTop = targetEl.getBoundingClientRect().top + window.scrollY - navHeight;
+          setTimeout(() => {
+            window.scrollTo({
+              top: Math.max(0, targetTop),
+              behavior: 'smooth'
+            });
+          }, 150);
+        }
+      } else {
+        closeMenu();
+      }
     });
   });
 }

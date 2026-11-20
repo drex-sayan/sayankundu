@@ -42,6 +42,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 8px);
   max-width: 100vw;
   overflow-x: clip; /* clip prevents horizontal scrollbar WITHOUT breaking position:sticky */
 }
@@ -1661,12 +1662,23 @@ button.sec-step-pill:hover .pill-num {
   border-radius: 24px;
 }
 
-.flip-card-wrapper:hover .flip-card-inner,
+@media (hover: hover) and (pointer: fine) {
+  .flip-card-wrapper:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-wrapper:hover .flip-card-front,
+  .flip-card-wrapper:hover .flip-card-back {
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.85), 0 0 28px rgba(255, 255, 255, 0.28), 0 0 10px rgba(255, 255, 255, 0.15);
+  }
+}
+
 .flip-card-wrapper.is-flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Front & Back Faces sharing 3:4 ratio and rounded pill border-radius (Picture 1) */
+/* Front & Back Faces base specification */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -1683,8 +1695,8 @@ button.sec-step-pill:hover .pill-num {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.flip-card-wrapper:hover .flip-card-front,
-.flip-card-wrapper:hover .flip-card-back {
+.flip-card-wrapper.is-flipped .flip-card-front,
+.flip-card-wrapper.is-flipped .flip-card-back {
   border-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.85), 0 0 28px rgba(255, 255, 255, 0.28), 0 0 10px rgba(255, 255, 255, 0.15);
 }
@@ -3952,83 +3964,137 @@ body.show-grid-guides .skills-card {
     right: 12px;
   }
 
-  /* 2. Mobile Bio Contact Flip Cards (Compact sizing & proportions) */
+  /* 1.1 Mobile Profile Card: Dynamic scaling, compact height, balanced padding */
+  .profile-title-card-stage {
+    padding: 24px 16px 20px;
+  }
+
+  .tilted-card-container {
+    width: clamp(230px, 68vw, 285px);
+    margin: 0 auto;
+  }
+
+  .portrait-container {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1 / 0.95;
+  }
+
+  .profile-photo {
+    object-position: center 15%;
+  }
+
+  .identity-card-meta {
+    padding: 10px 14px 12px;
+    gap: 2px;
+  }
+
+  .id-meta-row {
+    padding: 5px 0;
+  }
+
+  .id-meta-row .mono-label {
+    font-size: 8px;
+    letter-spacing: 0.12em;
+  }
+
+  .id-meta-row .mono-meta {
+    font-size: 8.5px;
+  }
+
+  .id-meta-institution {
+    gap: 4px !important;
+    padding: 8px 0 !important;
+  }
+
+  .id-meta-institution .institution-name {
+    font-size: 9px;
+    line-height: 1.35;
+  }
+
+  .depth-badge {
+    font-size: 7.5px;
+    padding: 2px 5px;
+  }
+
+  /* 2. Mobile Bio Contact Flip Cards (Symmetrical 2x3 Grid & Compact Sizing) */
   .profile-flip-cards-section {
-    padding: 22px 10px 32px;
-    gap: 12px;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 134px)) !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 16px 10px 24px !important;
   }
 
   .flip-cards-row {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: contents !important;
   }
 
   .flip-card-wrapper {
-    width: calc(50% - 6px);
-    max-width: 155px;
-    aspect-ratio: 1 / 1.15;
-    flex: 0 0 calc(50% - 6px);
-    border-radius: 16px;
+    width: 100% !important;
+    max-width: 134px !important;
+    aspect-ratio: 1 / 1.05 !important;
+    flex: none !important;
+    border-radius: 14px !important;
   }
 
   .flip-card-inner,
   .flip-card-front,
   .flip-card-back {
-    border-radius: 16px;
+    border-radius: 14px !important;
   }
 
   .flip-card-front {
-    padding: 14px 10px;
-    gap: 8px;
+    padding: 10px 6px !important;
+    gap: 6px !important;
   }
 
   .card-icon-circle {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
   }
 
   .card-icon-circle svg {
-    width: 20px;
-    height: 20px;
+    width: 17px !important;
+    height: 17px !important;
   }
 
   .card-channel-name {
-    font-size: 11px;
-    letter-spacing: 0.1em;
+    font-size: 9.5px !important;
+    letter-spacing: 0.08em !important;
   }
 
   .flip-card-back {
-    padding: 12px 8px;
+    padding: 8px 6px !important;
   }
 
   .card-back-header {
-    font-size: 8px;
-    letter-spacing: 0.12em;
+    font-size: 7.5px !important;
+    letter-spacing: 0.1em !important;
   }
 
   .card-back-body {
-    gap: 3px;
-    padding: 2px 0;
+    gap: 2px !important;
+    padding: 1px 0 !important;
   }
 
   .card-revealed-value {
-    font-size: 10.5px;
-    word-break: break-all;
-    line-height: 1.25;
+    font-size: 9px !important;
+    word-break: break-all !important;
+    line-height: 1.2 !important;
   }
 
   .card-action-hint {
-    font-size: 7.5px;
-    padding: 3px 6px;
-    margin-top: 2px;
+    font-size: 7px !important;
+    padding: 2px 5px !important;
+    margin-top: 2px !important;
   }
 
   .card-status-pill {
-    padding: 2px 5px;
-    font-size: 7.5px;
-    margin-top: 2px;
+    padding: 1px 4px !important;
+    font-size: 7px !important;
+    margin-top: 2px !important;
   }
 
   /* 3. Mobile Deck Optimization */
