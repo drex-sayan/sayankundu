@@ -1268,25 +1268,28 @@ function initGhostCursorEffect() {
   const container = document.getElementById('global-ghost-cursor');
   if (!container) return null;
 
+  const isMobile = window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 768;
+
   // Initialize with balanced, refined intensity & elegant glow
+  // On mobile / touch interfaces, calibrate to a delicate, subdued intensity
   const cursorInstance = window.initGhostCursor({
     container: container,
     parent: window,
     color: '#ffffff',         // Base glowing white, dynamically shifts to #B19EEF in skills
-    brightness: 1.4,          // Balanced, calibrated luminous brightness
+    brightness: isMobile ? 0.6 : 1.4,          // Reduced luminous brightness on mobile
     edgeIntensity: 0,         // Edge accentuation intensity
-    trailLength: 24,          // Smooth organic fluid motion trail
-    inertia: 0.42,            // Movement inertia (fluid lag)
-    grainIntensity: 0.04,     // Subtle cinematic film grain
-    bloomStrength: 0.58,      // Refined bloom glow intensity
-    bloomRadius: 0.75,        // Balanced bloom blur radius
+    trailLength: isMobile ? 12 : 24,          // Shorter, crisper fluid trail on mobile
+    inertia: isMobile ? 0.28 : 0.42,          // Movement inertia (fluid lag)
+    grainIntensity: isMobile ? 0.02 : 0.04,   // Subtle cinematic film grain
+    bloomStrength: isMobile ? 0.22 : 0.58,    // Subdued bloom glow intensity on mobile
+    bloomRadius: isMobile ? 0.4 : 0.75,       // Tighter bloom blur radius on mobile
     bloomThreshold: 0.01,     // Soft-onset bloom threshold
-    fadeDelayMs: 220,         // Delay before trail fades out when idle
-    fadeDurationMs: 1100,     // Smooth fade out animation
+    fadeDelayMs: isMobile ? 100 : 220,        // Quick fade when touch ends
+    fadeDurationMs: isMobile ? 550 : 1100,    // Faster smooth fade out animation
     mixBlendMode: 'screen',   // Screen blend mode for vibrant dark-mode illumination
-    heroIntensity: 1.25,      // Crisp intensity in hero 2x2 grid
-    textIntensity: 1.15,      // Calibrated visibility over text (prominent without blowing out)
-    blankIntensity: 1.05      // Gentle ambient smoke in negative space
+    heroIntensity: isMobile ? 0.55 : 1.25,    // Soft intensity in hero 2x2 grid on mobile
+    textIntensity: isMobile ? 0.45 : 1.15,    // Delicate visibility over text on mobile
+    blankIntensity: isMobile ? 0.4 : 1.05     // Gentle ambient smoke in negative space
   });
 
   window.ghostCursorInstance = cursorInstance;

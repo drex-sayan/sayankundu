@@ -93,6 +93,13 @@ body {
   mix-blend-mode: screen;
 }
 
+@media (max-width: 768px), (pointer: coarse) {
+  .ghost-cursor-canvas-wrap {
+    opacity: 0.42 !important;
+    filter: brightness(0.85);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .ghost-cursor-canvas-wrap {
     display: none !important;
