@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayan Kundu — Computer Science Undergraduate &amp; Software Developer | Portfolio</title>
+  <meta name="description" content="Official engineering portfolio of Sayan Kundu, Computer Science &amp; Engineering undergraduate at B.P. Poddar Institute of Management and Technology (2024–2028). Explore projects in AI, IoT, web technologies, and systems engineering.">
+  <meta name="keywords" content="Sayan Kundu, Computer Science, B.Tech CSE, Portfolio, B.P. Poddar Institute, Software Engineer, AI, IoT, Web Development, Full-Stack, Kolkata">
+  <meta name="author" content="Sayan Kundu">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sayan Kundu — Computer Science &amp; Engineering Portfolio">
+  <meta property="og:description" content="Explore AI, IoT, and full-stack software engineering projects by Sayan Kundu (B.Tech CSE 2024–2028).">
+  <meta property="og:image" content="profile_square.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sayan Kundu — Portfolio">
+  <meta name="twitter:description" content="Computer Science &amp; Engineering undergraduate at BPPIMT Kolkata.">
+  <meta name="twitter:image" content="profile_square.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#000000">
+  
+  <!-- Typography: Inter Tight (900), JetBrains Mono (400, 500, 600, 700), Inter (300, 400, 500) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,900;1,900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Global Noise Texture Overlay (5% opacity fractal noise SVG) -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Ghost Cursor WebGL Fluid Overlay Container -->
+  <div id="global-ghost-cursor" class="ghost-cursor-canvas-wrap" aria-hidden="true"></div>
+
+  <!-- Main Architectural Container -->
+  <div class="viewport-wrapper hairline-l hairline-r">
+
+    <!-- ================================================================= -->
+    <!-- NAVIGATION BAR (~72px, 80% opacity, backdrop blur, hairline-b)  -->
+    <!-- ================================================================= -->
+    <header class="navbar hairline-b">
+      <!-- Left side: Brand Name, 6px white dot, mono version/degree tag -->
+      <div class="nav-left">
+        <a href="#hero" class="brand-link" id="header-brand-logo" aria-label="Sayan Kundu — Return to top of page">
+          <span class="brand-name">SAYAN KUNDU</span>
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="version-tag">B.TECH_CSE // 2024–2028</span>
+        </a>
+      </div>
+
+      <!-- Center: Section Navigation Buttons -->
+      <nav class="nav-center hairline-l hairline-r" aria-label="Main Section Navigation">
+        <div class="nav-btn-group">
+          <a href="#profile" class="nav-section-btn" data-section-target="profile">
+            <span class="nav-btn-idx">01</span>
+            <span class="nav-btn-text">BIO</span>
+          </a>
+          <a href="#projects" class="nav-section-btn" data-section-target="projects">
+            <span class="nav-btn-idx">02</span>
+            <span class="nav-btn-text">PROJECTS</span>
+          </a>
+          <a href="#skills" class="nav-section-btn" data-section-target="skills">
+            <span class="nav-btn-idx">03</span>
+            <span class="nav-btn-text">SKILLS</span>
+          </a>
+          <a href="#education" class="nav-section-btn" data-section-target="education">
+            <span class="nav-btn-idx">04</span>
+            <span class="nav-btn-text">ACADEMICS</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Right side: Social icons in 40px circular hairline containers + pill button -->
+      <div class="nav-right">
+        <div class="social-links">
+          <!-- Social 1: GitHub -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GITHUB_PROFILE" title="GITHUB: drex-sayan">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+
+          <!-- Social 2: LinkedIn -->
+          <a href="https://www.linkedin.com/in/sayan-kundu-drex/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LINKEDIN_PROFILE" title="LINKEDIN: sayan-kundu-drex">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+
+          <!-- Social 3: Instagram -->
+          <a href="https://www.instagram.com/drex_sayan/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="INSTAGRAM_PROFILE" title="INSTAGRAM: @drex_sayan">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle>
+            </svg>
+          </a>
+
+          <!-- Social 4: Audio Feedback Toggle -->
+          <button class="social-circle" aria-label="TOGGLE_ACOUSTIC_FEEDBACK" id="btn-audio-toggle" title="TOGGLE_ACOUSTIC_FEEDBACK">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+          </button>
+
+          <!-- Social 5: Light / Dark Mode Theme Toggle (Temporarily Disabled) -->
+          <button class="social-circle" aria-label="TOGGLE_LIGHT_DARK_THEME" id="btn-theme-toggle" title="LIGHT MODE CURRENTLY DISABLED" disabled aria-disabled="true">
+            <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Pill-shaped 'GET IN TOUCH' button with 10px bold mono text -->
+        <button class="pill-btn glow-cta-btn" id="open-access-modal" type="button">
+          <span>GET IN TOUCH</span>
+          <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" type="button">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay & Drawer -->
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true">
+      <div class="mobile-nav-drawer hairline-l" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+        <div class="mobile-drawer-header hairline-b">
+          <div class="mobile-drawer-brand">
+            <span class="status-dot"></span>
+            <span class="mono-meta">NAVIGATION_MATRIX</span>
+          </div>
+          <button class="modal-close-btn" id="mobile-nav-close-btn" aria-label="Close menu">[CLOSE_X]</button>
+        </div>
+        <nav class="mobile-nav-list">
+          <a href="#hero" class="mobile-nav-item hairline-b" data-nav-close>
+            <span class="nav-idx">00</span>
+            <span class="nav-title">OVERVIEW_HERO</span>
+            <span class="nav-arrow">↑</span>
+          </a>
+          <a href="#profile" class="mobile-nav-item hairline-b" data-nav-close>
+            <span class="nav-idx">01</span>
+            <span class="nav-title">BIOGRAPHICAL_DOSSIER</span>
+            <span class="nav-arrow">→</span>
+          </a>
+          <a href="#projects" class="mobile-nav-item hairline-b" data-nav-close>
+            <span class="nav-idx">02</span>
+            <span class="nav-title">SYSTEMS_ENGINEERED</span>
+            <span class="nav-arrow">→</span>
+          </a>
+          <a href="#skills" class="mobile-nav-item hairline-b" data-nav-close>
+            <span class="nav-idx">03</span>
+            <span class="nav-title">TECHNICAL_INVENTORY</span>
+            <span class="nav-arrow">→</span>
+          </a>
+          <a href="#education" class="mobile-nav-item hairline-b" data-nav-close>
+            <span class="nav-idx">04</span>
+            <span class="nav-title">ACADEMIC_RECORD</span>
+            <span class="nav-arrow">→</span>
+          </a>
+          <button type="button" class="mobile-nav-item hairline-b" id="mobile-theme-toggle-btn" disabled aria-disabled="true" title="LIGHT MODE CURRENTLY DISABLED">
+            <span class="nav-idx">✦</span>
+            <span class="nav-title" id="mobile-theme-text">THEME: OBSIDIAN DARK</span>
+            <span class="nav-arrow">TOGGLE ⇄</span>
+          </button>
+          <button type="button" class="mobile-nav-item mobile-contact-trigger glow-cta-btn hairline-b" id="mobile-nav-contact-btn">
+            <span class="nav-idx">05</span>
+            <span class="nav-title">GET_IN_TOUCH</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </nav>
+        <div class="mobile-drawer-footer">
+          <div class="mobile-quick-links">
+            <a href="tel:+919836716634" class="mobile-footer-link">
+              <span class="mono-label">TEL:</span> +91 9836716634
+            </a>
+            <a href="mailto:sayankundu094@gmail.com" class="mobile-footer-link">
+              <span class="mono-label">MAIL:</span> sayankundu094@gmail.com
+            </a>
+          </div>
+          <div class="mobile-social-bar hairline-t">
+            <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sayan-kundu-drex/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/drex_sayan/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- HERO SECTION (THE GRID: 2x2 filling remaining viewport height)   -->
+    <!-- ================================================================= -->
+    <main id="hero" class="hero-grid hairline-b">
+      <!-- Grid Crosshair Annotation in Center -->
+      <div class="grid-crosshair" aria-hidden="true">+</div>
+
+      <!-- Cell 1: Top-Left ('SA') -->
+      <div class="grid-cell cell-tl hairline-r hairline-b" data-segment="0">
+        <!-- Blueprint Corner Label -->
+        <div class="cell-metadata top-left">
+          <span class="mono-label">QUAD_01 // IDENTITY</span>
+          <span class="mono-coords">[SAYAN_KUNDU]</span>
+        </div>
+        <div class="cell-metadata bottom-right">
+          <span class="mono-dim">ROLE: COMPUTER_SCIENCE_UNDERGRADUATE</span>
+        </div>
+        <!-- Huge Segment -->
+        <div class="type-segment align-bottom-left" id="seg-0">
+          SA
+        </div>
+      </div>
+
+      <!-- Cell 2: Top-Right ('YAN') -->
+      <div class="grid-cell cell-tr hairline-b" data-segment="1">
+        <div class="cell-metadata top-left">
+          <span class="mono-label">QUAD_02 // ACADEMICS</span>
+          <span class="mono-coords">[B.TECH_CSE_2024–2028]</span>
+        </div>
+        <div class="cell-metadata bottom-right">
+          <span class="mono-dim">INSTITUTE: B.P._PODDAR_INSTITUTE</span>
+        </div>
+        <!-- Huge Segment -->
+        <div class="type-segment align-bottom-left" id="seg-1">
+          YAN
+        </div>
+      </div>
+
+      <!-- Cell 3: Bottom-Left ('KUN') -->
+      <div class="grid-cell cell-bl hairline-r" data-segment="2">
+        <div class="cell-metadata top-left">
+          <span class="mono-label">QUAD_03 // SPECIALIZATION</span>
+          <span class="mono-coords">[AI_IOT_SYSTEMS]</span>
+        </div>
+        <div class="cell-metadata bottom-right">
+          <span class="mono-dim">FOUNDATION: C/C++_PY_JAVA_DSA_OOP</span>
+        </div>
+        <!-- Huge Segment -->
+        <div class="type-segment align-top-left" id="seg-2">
+          KUN
+        </div>
+      </div>
+
+      <!-- Cell 4: Bottom-Right ('DU') -->
+      <div class="grid-cell cell-br" data-segment="3">
+        <div class="cell-metadata top-left">
+          <span class="mono-label">QUAD_04 // ACHIEVEMENTS</span>
+          <span class="mono-coords">[2X_HACKATHON_PODIUM]</span>
+        </div>
+        <div class="cell-metadata bottom-right">
+          <button class="mono-action-btn" id="cycle-word-btn" title="CLICK_TO_CYCLE_ARCHITECTURE_WORD">
+            CYCLE_LEXICON_↻
+          </button>
+        </div>
+        <!-- Huge Segment -->
+        <div class="type-segment align-top-left" id="seg-3">
+          DU
+        </div>
+      </div>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 1: ABOUT ME & ENGINEERING FOUNDATION                      -->
+    <!-- ================================================================= -->
+    <header class="section-banner hairline-b" id="profile">
+      <div class="section-banner-top hairline-b">
+        <div class="banner-tag">
+          <span class="deck-pulse-dot"></span>
+          <span class="mono-label">SECTOR_01 // BIOGRAPHY</span>
+        </div>
+        <div class="banner-coords">
+          <span class="mono-coords">[OPERATOR_DOSSIER]</span>
+        </div>
+      </div>
+      <div class="section-banner-main">
+        <div class="banner-title-wrap">
+          <h2 class="section-title-large">ABOUT ME &amp; BACKGROUND</h2>
+        </div>
+        <p class="section-description">
+          Computer Science &amp; Engineering undergraduate at B.P. Poddar Institute with foundations in C/C++, Python, Java, DSA, OOP, Cloud Computing, and AI/IoT systems.
+        </p>
+      </div>
+    </header>
+
+    <section class="profile-centered-layout hairline-b">
+      <!-- 1. TITLE CARD IN THE MIDDLE (3D TiltedCard with Physics & Follow Tooltip) -->
+      <div class="profile-title-card-stage">
+        <figure class="tilted-card-container" id="profile-tilted-card" aria-label="Sayan Kundu 3D Interactive Profile Card">
+          <div class="tilted-card-inner hairline-all">
+            <!-- Portrait Image with 3D Depth -->
+            <div class="portrait-container">
+              <img src="profile_square.jpg" alt="Sayan Kundu - Computer Science Undergraduate" class="profile-photo" id="profile-img">
+              <div class="portrait-depth-overlay">
+                <span class="depth-badge">OPERATOR_ID // 2024-2028</span>
+              </div>
+            </div>
+
+            <!-- Identity Metadata Token -->
+            <div class="identity-card-meta hairline-t">
+              <div class="id-meta-row hairline-b">
+                <span class="mono-label">NAME</span>
+                <span class="mono-meta text-white">SAYAN KUNDU</span>
+              </div>
+              <div class="id-meta-row hairline-b">
+                <span class="mono-label">ROLE</span>
+                <span class="mono-meta text-white">CSE UNDERGRADUATE</span>
+              </div>
+              <div class="id-meta-row id-meta-institution hairline-b">
+                <div class="id-meta-header">
+                  <span class="mono-label">ACADEMIC_INSTITUTION</span>
+                </div>
+                <div class="id-meta-val">
+                  <span class="mono-meta text-white institution-name">B.P. PODDAR INSTITUTE OF MANAGEMENT &amp; TECHNOLOGY</span>
+                </div>
+              </div>
+              <div class="id-meta-row">
+                <span class="mono-label">TIMELINE</span>
+                <span class="mono-meta accent-text">2024 – 2028 (ACTIVE)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Cursor Follow Tooltip -->
+          <figcaption class="tilted-card-tooltip" id="tilted-card-tooltip" aria-hidden="true">
+            SAYAN KUNDU // CSE UNDERGRADUATE
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- 2. DESCRIPTION DIRECTLY BELOW THE TITLE CARD -->
+      <div class="profile-statement-center hairline-t hairline-b">
+        <div class="statement-inner">
+          <div class="statement-tag-row">
+            <span class="deck-pulse-dot"></span>
+            <span class="mono-label">PROFESSIONAL_STATEMENT</span>
+          </div>
+          <p class="profile-paragraph">
+            Motivated Computer Science student with a strong foundation in <strong class="text-white">C/C++, Python, Java, Data Structures &amp; Algorithms, OOP, Cloud Computing, and Computer Architecture</strong>. Experienced in developing practical projects involving <strong class="text-white">AI, IoT, web technologies, and hardware-software integration</strong>. A proactive learner with strong problem-solving and teamwork skills, eager to apply technical knowledge to real-world challenges and grow in a professional environment.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. THE 6 CONTACT & SOCIAL CARDS (3:4 Aspect Ratio, Minimalist, Hover Reveal) -->
+      <div class="profile-flip-cards-section" aria-label="Contact and Social Coordinates">
+        <!-- Row 1: Telephone, Electronic Mail, Location (3 Cards, 3:4 Aspect Ratio) -->
+        <div class="flip-cards-row">
+          <!-- FlipCard 1: Telephone -->
+          <div class="flip-card-wrapper" data-flip-target="phone">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <h3 class="card-channel-name">TELEPHONE</h3>
+              </div>
+              <div class="flip-card-back">
+                <span class="card-back-header">TELEPHONE</span>
+                <div class="card-back-body">
+                  <span class="card-revealed-value">+91 9836716634</span>
+                </div>
+                <a href="tel:+919836716634" class="flip-action-btn glow-cta-btn">
+                  <span>CALL NOW</span>
+                  <svg class="btn-arrow-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FlipCard 2: Electronic Mail -->
+          <div class="flip-card-wrapper" data-flip-target="email">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <h3 class="card-channel-name">ELECTRONIC MAIL</h3>
+              </div>
+              <div class="flip-card-back">
+                <span class="card-back-header">ELECTRONIC MAIL</span>
+                <div class="card-back-body">
+                  <span class="card-revealed-value card-revealed-sm">sayankundu094@gmail.com</span>
+                </div>
+                <a href="mailto:sayankundu094@gmail.com" class="flip-action-btn glow-cta-btn">
+                  <span>SEND EMAIL</span>
+                  <svg class="btn-arrow-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FlipCard 3: Geographic Location -->
+          <div class="flip-card-wrapper" data-flip-target="location">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <h3 class="card-channel-name">LOCATION</h3>
+              </div>
+              <div class="flip-card-back">
+                <span class="card-back-header">LOCATION</span>
+                <div class="card-back-body">
+                  <span class="card-revealed-value card-revealed-sm">Kolkata, West Bengal</span>
+                  <span class="card-revealed-sub">TIMEZONE: IST (UTC+5:30)</span>
+                </div>
+                <span class="flip-badge-status">REMOTE / HYBRID</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: GitHub, LinkedIn, Instagram (3 Cards, 3:4 Aspect Ratio) -->
+        <div class="flip-cards-row">
+          <!-- FlipCard 4: GitHub -->
+          <div class="flip-card-wrapper" data-flip-target="github">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <h3 class="card-channel-name">GITHUB</h3>
+              </div>
+              <div class="flip-card-back">
+                <span class="card-back-header">GITHUB</span>
+                <div class="card-back-body">
+                  <span class="card-revealed-value">@drex-sayan</span>
+                </div>
+                <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="flip-action-btn glow-cta-btn">
+                  <span>VIEW REPOS</span>
+                  <svg class="btn-arrow-icon" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FlipCard 5: LinkedIn -->
+          <div class="flip-card-wrapper" data-flip-target="linkedin">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <h3 class="card-channel-name">LINKEDIN</h3>
+              </div>
+              <div class="flip-card-back">
+                <span class="card-back-header">LINKEDIN</span>
+                <div class="card-back-body">
+                  <span class="card-revealed-value card-revealed-sm">/in/sayan-kundu-drex</span>
+                </div>
+                <a href="https://www.linkedin.com/in/sayan-kundu-drex/" target="_blank" rel="noopener noreferrer" class="flip-action-btn glow-cta-btn">
+                  <span>CONNECT</span>
+                  <svg class="btn-arrow-icon" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FlipCard 6: Instagram -->
+          <div class="flip-card-wrapper" data-flip-target="instagram">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-icon-circle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle>
+                  </svg>
+                </div>
+                <h3 class="card-channel-name">INSTAGRAM</h3>
+              </div>
+              <div class="flip-card-back">
+                <span class="card-back-header">INSTAGRAM</span>
+                <div class="card-back-body">
+                  <span class="card-revealed-value">@drex_sayan</span>
+                </div>
+                <a href="https://www.instagram.com/drex_sayan/" target="_blank" rel="noopener noreferrer" class="flip-action-btn glow-cta-btn">
+                  <span>VISIT PROFILE</span>
+                  <svg class="btn-arrow-icon" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 2: FEATURED PROJECTS MATRIX                              -->
+    <!-- ================================================================= -->
+    <header class="section-banner hairline-b" id="projects">
+      <div class="section-banner-top hairline-b">
+        <div class="banner-tag">
+          <span class="deck-pulse-dot accent-cyan"></span>
+          <span class="mono-label">SECTOR_02 // SYSTEMS_ENGINEERED</span>
+        </div>
+        <div class="banner-coords">
+          <span class="mono-coords">[04_MAJOR_PROJECTS]</span>
+        </div>
+      </div>
+      <div class="section-banner-main">
+        <div class="banner-title-wrap">
+          <h2 class="section-title-large">FEATURED PROJECTS</h2>
+        </div>
+        <p class="section-description">
+          Full-stack web applications, AI-driven developer tooling, predictive environmental IoT systems, and intelligent narrative workspaces.
+        </p>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- 3D FANNED CARD STACK VIEW (Interactive Framer/Shadcn CardStack)   -->
+    <!-- ================================================================= -->
+    <div class="card-stack-stage-wrapper hairline-b" id="projects-card-stack-view">
+      <!-- Background ambient wash spotlights -->
+      <div class="card-stack-spotlight-top" aria-hidden="true"></div>
+      <div class="card-stack-spotlight-bottom" aria-hidden="true"></div>
+
+      <!-- 3D Perspective Fan Arena -->
+      <div class="card-stack-arena" id="card-stack-arena" tabindex="0" role="region" aria-label="Featured Projects 3D Card Stack">
+        <div class="card-stack-deck" id="card-stack-deck">
+          
+          <!-- Card 0: Cognitio -->
+          <article class="card-stack-item project-theme-cyan" data-stack-index="0" data-project-id="cognitio">
+            <div class="stack-card-glow"></div>
+            <div class="project-card-top">
+              <div class="project-meta-strip">
+                <span class="project-index-tag">PROJECT_01</span>
+                <span class="project-date-tag">MAY 2026</span>
+              </div>
+              <div class="award-ribbon hairline-all">
+                <span class="award-star">★</span>
+                <span class="award-text">AWARD: RANKED 5TH OUT OF 32 TEAMS IN HACKSPHERE [TECHNO INTERNATIONAL NEW TOWN]</span>
+              </div>
+            </div>
+
+            <div class="project-center-visual">
+              <div class="geometric-shape project-icon-wrap" aria-hidden="true">
+                <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#FFFFFF" stroke-width="0.8">
+                  <rect x="15" y="15" width="70" height="70" stroke-width="0.7"/>
+                  <line x1="15" y1="30" x2="85" y2="30" stroke-width="0.6"/>
+                  <circle cx="22" cy="22.5" r="2.5" fill="#FFFFFF"/>
+                  <circle cx="30" cy="22.5" r="2.5" fill="#FFFFFF"/>
+                  <circle cx="38" cy="22.5" r="2.5" fill="#FFFFFF"/>
+                  <path d="M30 45 L22 55 L30 65" stroke-width="1.2"/>
+                  <path d="M70 45 L78 55 L70 65" stroke-width="1.2"/>
+                  <line x1="54" y1="42" x2="46" y2="68" stroke-width="1.2" stroke="#FFFFFF"/>
+                  <line x1="24" y1="78" x2="76" y2="78" stroke-dasharray="2 2" stroke-width="0.5"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content-body">
+              <h2 class="project-title">COGNITIO: REAL-TIME CODE ANALYZER &amp; LOGICAL ERROR DETECTOR</h2>
+              <p class="project-summary">Real-time code inspection extension &amp; Gemini-powered logical bug scoring engine.</p>
+              <div class="project-tags-wrap">
+                <span class="tech-tag">Javascript</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag accent-tech-tag">Gemini API</span>
+              </div>
+            </div>
+
+            <div class="project-actions-strip hairline-t">
+              <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+                <span class="btn-label">CODE_REPO</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17L17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </a>
+              <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="cognitio">
+                <span class="btn-label">VIEW_DETAILS</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 1: AI Air Quality -->
+          <article class="card-stack-item project-theme-emerald" data-stack-index="1" data-project-id="aqi">
+            <div class="stack-card-glow"></div>
+            <div class="project-card-top">
+              <div class="project-meta-strip">
+                <span class="project-index-tag">PROJECT_02</span>
+                <span class="project-date-tag">APRIL 2026</span>
+              </div>
+              <div class="award-ribbon hairline-all">
+                <span class="award-star">★</span>
+                <span class="award-text">AWARD: 1ST RUNNER-UP IN TECHNOMANIA: TECHSTORM 2.26 OUT OF 28 TEAMS</span>
+              </div>
+            </div>
+
+            <div class="project-center-visual">
+              <div class="geometric-shape project-icon-wrap" aria-hidden="true">
+                <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#FFFFFF" stroke-width="0.8">
+                  <circle cx="50" cy="50" r="38" stroke-width="0.6"/>
+                  <circle cx="50" cy="50" r="26" stroke-width="0.6" stroke-dasharray="3 3"/>
+                  <circle cx="50" cy="50" r="14" stroke-width="0.8" stroke="#FFFFFF"/>
+                  <line x1="50" y1="5" x2="50" y2="95" stroke-width="0.5"/>
+                  <line x1="5" y1="50" x2="95" y2="50" stroke-width="0.5"/>
+                  <rect x="47" y="47" width="6" height="6" fill="#FFFFFF"/>
+                  <circle cx="50" cy="24" r="2" fill="#FFFFFF"/>
+                  <circle cx="76" cy="50" r="2" fill="#FFFFFF"/>
+                  <circle cx="50" cy="76" r="2" fill="#FFFFFF"/>
+                  <circle cx="24" cy="50" r="2" fill="#FFFFFF"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content-body">
+              <h2 class="project-title">AI-BASED AIR QUALITY MONITORING &amp; PREDICTION SYSTEM</h2>
+              <p class="project-summary">Hyper-local IoT hardware sensor array with predictive machine learning forecasting.</p>
+              <div class="project-tags-wrap">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag accent-tech-tag">Microcontroller_IoT</span>
+              </div>
+            </div>
+
+            <div class="project-actions-strip hairline-t">
+              <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+                <span class="btn-label">CODE_REPO</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17L17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </a>
+              <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="aqi">
+                <span class="btn-label">VIEW_DETAILS</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: NorthStar Continuity Guardian -->
+          <article class="card-stack-item project-theme-violet" data-stack-index="2" data-project-id="northstar">
+            <div class="stack-card-glow"></div>
+            <div class="project-card-top">
+              <div class="project-meta-strip">
+                <span class="project-index-tag">PROJECT_03</span>
+                <span class="project-date-tag">NOVEMBER 2026</span>
+              </div>
+              <div class="award-ribbon hairline-all">
+                <span class="award-star">◆</span>
+                <span class="award-text">MULTI-AGENT WORKSPACE // 3 SYNCHRONIZED MEMORY TIERS</span>
+              </div>
+            </div>
+
+            <div class="project-center-visual">
+              <div class="interactive-square-outer hairline-all" aria-hidden="true" title="HOVER_TO_ROTATE_GEOMETRIC_TRANSFORM">
+                <div class="interactive-square-inner hairline-all">
+                  <div class="inner-core-dot"></div>
+                </div>
+                <div class="outer-crosshair-h"></div>
+                <div class="outer-crosshair-v"></div>
+              </div>
+            </div>
+
+            <div class="project-content-body">
+              <h2 class="project-title">NORTHSTAR — AI CONTINUITY GUARDIAN</h2>
+              <p class="project-summary">Browser-based multi-tier memory workspace ensuring canon consistency for narrative architects.</p>
+              <div class="project-tags-wrap">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">SQLAlchemy 2.0</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">React with Vite</span>
+                <span class="tech-tag accent-tech-tag">ChromaDB / NetworkX</span>
+              </div>
+            </div>
+
+            <div class="project-actions-strip hairline-t">
+              <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+                <span class="btn-label">CODE_REPO</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17L17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </a>
+              <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="northstar">
+                <span class="btn-label">VIEW_DETAILS</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: FloodGuard Early Warning -->
+          <article class="card-stack-item project-theme-amber" data-stack-index="3" data-project-id="floodguard">
+            <div class="stack-card-glow"></div>
+            <div class="project-card-top">
+              <div class="project-meta-strip">
+                <span class="project-index-tag">PROJECT_04</span>
+                <span class="project-date-tag">OCTOBER 2026</span>
+              </div>
+              <div class="award-ribbon hairline-all">
+                <span class="award-star">◆</span>
+                <span class="award-text">DISASTER PREPAREDNESS // RISK FUSION ENGINE &amp; GEOFENCING</span>
+              </div>
+            </div>
+
+            <div class="project-center-visual">
+              <div class="geometric-shape project-icon-wrap" aria-hidden="true">
+                <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#FFFFFF" stroke-width="0.8">
+                  <polygon points="50,15 88,38 88,78 50,92 12,78 12,38" stroke-width="0.7"/>
+                  <polygon points="50,30 74,45 74,70 50,80 26,70 26,45" stroke-dasharray="2 2" stroke-width="0.6"/>
+                  <path d="M20 50 Q 50 35 80 50" stroke-width="0.6"/>
+                  <path d="M22 62 Q 50 50 78 62" stroke-width="0.6"/>
+                  <path d="M30 72 Q 50 64 70 72" stroke-width="0.6"/>
+                  <circle cx="50" cy="50" r="4" fill="#FFFFFF"/>
+                  <circle cx="50" cy="50" r="10" stroke="#FFFFFF" stroke-width="0.5"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content-body">
+              <h2 class="project-title">FLOODGUARD — FLASH FLOOD &amp; LANDSLIDE EARLY WARNING SYSTEM</h2>
+              <p class="project-summary">Geospatial risk assessment platform with ML danger zone fusion &amp; automated alerts.</p>
+              <div class="project-tags-wrap">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag accent-tech-tag">MySQL</span>
+              </div>
+            </div>
+
+            <div class="project-actions-strip hairline-t">
+              <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+                <span class="btn-label">CODE_REPO</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17L17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </a>
+              <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="floodguard">
+                <span class="btn-label">VIEW_DETAILS</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Centered Dots Navigation & Controls -->
+      <div class="card-stack-controls">
+        <button type="button" class="stack-nav-arrow" id="stack-prev-btn" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="card-stack-dots" id="card-stack-dots">
+          <button type="button" class="stack-dot active" data-index="0" aria-label="Project 1: Cognitio"></button>
+          <button type="button" class="stack-dot" data-index="1" aria-label="Project 2: AQI System"></button>
+          <button type="button" class="stack-dot" data-index="2" aria-label="Project 3: NorthStar"></button>
+          <button type="button" class="stack-dot" data-index="3" aria-label="Project 4: FloodGuard"></button>
+        </div>
+        <button type="button" class="stack-nav-arrow" id="stack-next-btn" aria-label="Next project">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="stack-counter-hud">
+          <span class="mono-meta" id="stack-counter-text">01 / 04 // COGNITIO: CODE ANALYZER</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Grid: 2x2 Architectural Bento Layout (Toggleable) -->
+    <section class="projects-matrix-grid hairline-b" id="projects-grid-view" style="display: none;">
+      
+      <!-- Project 1: Cognitio (Cyan / Blue Accent) -->
+      <article class="project-card project-theme-cyan hairline-r hairline-b" data-project-id="cognitio">
+        <div class="project-card-top">
+          <div class="project-meta-strip">
+            <span class="project-index-tag">PROJECT_01</span>
+            <span class="project-date-tag">MAY 2026</span>
+          </div>
+          <!-- Award Banner -->
+          <div class="award-ribbon hairline-all">
+            <span class="award-star">★</span>
+            <span class="award-text">AWARD: RANKED 5TH OUT OF 32 TEAMS IN HACKSPHERE [TECHNO INTERNATIONAL NEW TOWN]</span>
+          </div>
+        </div>
+
+        <div class="project-center-visual">
+          <div class="geometric-shape project-icon-wrap" aria-hidden="true">
+            <svg width="150" height="150" viewBox="0 0 100 100" fill="none" stroke="#FFFFFF" stroke-width="0.8">
+              <!-- Code analyzer syntax inspection schematic -->
+              <rect x="15" y="15" width="70" height="70" stroke-width="0.7"/>
+              <line x1="15" y1="30" x2="85" y2="30" stroke-width="0.6"/>
+              <circle cx="22" cy="22.5" r="2.5" fill="#FFFFFF"/>
+              <circle cx="30" cy="22.5" r="2.5" fill="#FFFFFF"/>
+              <circle cx="38" cy="22.5" r="2.5" fill="#FFFFFF"/>
+              <!-- Code logic brackets -->
+              <path d="M30 45 L22 55 L30 65" stroke-width="1.2"/>
+              <path d="M70 45 L78 55 L70 65" stroke-width="1.2"/>
+              <line x1="54" y1="42" x2="46" y2="68" stroke-width="1.2" stroke="#FFFFFF"/>
+              <line x1="24" y1="78" x2="76" y2="78" stroke-dasharray="2 2" stroke-width="0.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="project-content-body">
+          <h2 class="project-title">COGNITIO: REAL-TIME CODE ANALYZER &amp; LOGICAL ERROR DETECTOR</h2>
+          <p class="project-summary">Real-time code inspection extension &amp; Gemini-powered logical bug scoring engine.</p>
+          
+          <div class="project-tags-wrap">
+            <span class="tech-tag">Javascript</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag accent-tech-tag">Gemini API</span>
+          </div>
+        </div>
+
+        <div class="project-actions-strip hairline-t">
+          <!-- Sayan: Drop your GitHub repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+            <span class="btn-label">CODE_REPO</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="cognitio">
+            <span class="btn-label">VIEW_DETAILS</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 2: AI-Based Air Quality Monitoring (Emerald Green Accent) -->
+      <article class="project-card project-theme-emerald hairline-b" data-project-id="aqi">
+        <div class="project-card-top">
+          <div class="project-meta-strip">
+            <span class="project-index-tag">PROJECT_02</span>
+            <span class="project-date-tag">APRIL 2026</span>
+          </div>
+          <!-- Award Banner -->
+          <div class="award-ribbon hairline-all">
+            <span class="award-star">★</span>
+            <span class="award-text">AWARD: 1ST RUNNER-UP IN TECHNOMANIA: TECHSTORM 2.26 OUT OF 28 TEAMS</span>
+          </div>
+        </div>
+
+        <div class="project-center-visual">
+          <div class="geometric-shape project-icon-wrap" aria-hidden="true">
+            <svg width="150" height="150" viewBox="0 0 100 100" fill="none" stroke="#FFFFFF" stroke-width="0.8">
+              <!-- Environmental particulate sensor matrix & dispersion -->
+              <circle cx="50" cy="50" r="38" stroke-width="0.6"/>
+              <circle cx="50" cy="50" r="26" stroke-width="0.6" stroke-dasharray="3 3"/>
+              <circle cx="50" cy="50" r="14" stroke-width="0.8" stroke="#FFFFFF"/>
+              <line x1="50" y1="5" x2="50" y2="95" stroke-width="0.5"/>
+              <line x1="5" y1="50" x2="95" y2="50" stroke-width="0.5"/>
+              <rect x="47" y="47" width="6" height="6" fill="#FFFFFF"/>
+              <circle cx="50" cy="24" r="2" fill="#FFFFFF"/>
+              <circle cx="76" cy="50" r="2" fill="#FFFFFF"/>
+              <circle cx="50" cy="76" r="2" fill="#FFFFFF"/>
+              <circle cx="24" cy="50" r="2" fill="#FFFFFF"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="project-content-body">
+          <h2 class="project-title">AI-BASED AIR QUALITY MONITORING &amp; PREDICTION SYSTEM</h2>
+          <p class="project-summary">Hyper-local IoT hardware sensor array with predictive machine learning forecasting.</p>
+          
+          <div class="project-tags-wrap">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag accent-tech-tag">Microcontroller_IoT</span>
+          </div>
+        </div>
+
+        <div class="project-actions-strip hairline-t">
+          <!-- Sayan: Drop your GitHub repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+            <span class="btn-label">CODE_REPO</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="aqi">
+            <span class="btn-label">VIEW_DETAILS</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 3: NorthStar (Violet Accent & Interactive Rotating Geometric Card) -->
+      <article class="project-card project-theme-violet hairline-r interactive-geometric-card" id="interactive-card" data-project-id="northstar">
+        <div class="project-card-top">
+          <div class="project-meta-strip">
+            <span class="project-index-tag">PROJECT_03</span>
+            <span class="project-date-tag">NOVEMBER 2026</span>
+          </div>
+          <!-- Architecture Spec Banner -->
+          <div class="award-ribbon hairline-all">
+            <span class="award-star">◆</span>
+            <span class="award-text">MULTI-AGENT WORKSPACE // 3 SYNCHRONIZED MEMORY TIERS</span>
+          </div>
+        </div>
+
+        <!-- Center: Interactive Geometric Element representing 3 synchronized memory tiers -->
+        <div class="project-center-visual">
+          <div class="interactive-square-outer hairline-all" aria-hidden="true" title="HOVER_TO_ROTATE_GEOMETRIC_TRANSFORM">
+            <div class="interactive-square-inner hairline-all">
+              <div class="inner-core-dot"></div>
+            </div>
+            <div class="outer-crosshair-h"></div>
+            <div class="outer-crosshair-v"></div>
+          </div>
+        </div>
+
+        <div class="project-content-body">
+          <h2 class="project-title">NORTHSTAR — AI CONTINUITY GUARDIAN</h2>
+          <p class="project-summary">Browser-based multi-tier memory workspace ensuring canon consistency for narrative architects.</p>
+          
+          <div class="project-tags-wrap">
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">SQLAlchemy 2.0</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">React with Vite</span>
+            <span class="tech-tag accent-tech-tag">ChromaDB / NetworkX</span>
+          </div>
+        </div>
+
+        <div class="project-actions-strip hairline-t">
+          <!-- Sayan: Drop your GitHub repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+            <span class="btn-label">CODE_REPO</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="northstar">
+            <span class="btn-label">VIEW_DETAILS</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 4: FloodGuard (Amber Flame Accent) -->
+      <article class="project-card project-theme-amber" data-project-id="floodguard">
+        <div class="project-card-top">
+          <div class="project-meta-strip">
+            <span class="project-index-tag">PROJECT_04</span>
+            <span class="project-date-tag">OCTOBER 2026</span>
+          </div>
+          <!-- Engine Spec Banner -->
+          <div class="award-ribbon hairline-all">
+            <span class="award-star">◆</span>
+            <span class="award-text">DISASTER PREPAREDNESS // RISK FUSION ENGINE &amp; GEOFENCING</span>
+          </div>
+        </div>
+
+        <div class="project-center-visual">
+          <div class="geometric-shape project-icon-wrap" aria-hidden="true">
+            <svg width="150" height="150" viewBox="0 0 100 100" fill="none" stroke="#FFFFFF" stroke-width="0.8">
+              <!-- Topographical risk zone geofencing vector schematic -->
+              <polygon points="50,15 88,38 88,78 50,92 12,78 12,38" stroke-width="0.7"/>
+              <polygon points="50,30 74,45 74,70 50,80 26,70 26,45" stroke-dasharray="2 2" stroke-width="0.6"/>
+              <path d="M20 50 Q 50 35 80 50" stroke-width="0.6"/>
+              <path d="M22 62 Q 50 50 78 62" stroke-width="0.6"/>
+              <path d="M30 72 Q 50 64 70 72" stroke-width="0.6"/>
+              <circle cx="50" cy="50" r="4" fill="#FFFFFF"/>
+              <circle cx="50" cy="50" r="10" stroke="#FFFFFF" stroke-width="0.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="project-content-body">
+          <h2 class="project-title">FLOODGUARD — FLASH FLOOD &amp; LANDSLIDE EARLY WARNING SYSTEM</h2>
+          <p class="project-summary">Geospatial risk assessment platform with ML danger zone fusion &amp; automated alerts.</p>
+          
+          <div class="project-tags-wrap">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag accent-tech-tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-actions-strip hairline-t">
+          <!-- Sayan: Drop your GitHub repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-repo-btn glow-cta-btn hairline-r" title="GITHUB_REPO: drex-sayan">
+            <span class="btn-label">CODE_REPO</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="proj-action-btn proj-expand-btn glow-cta-btn" data-open-dossier="floodguard">
+            <span class="btn-label">VIEW_DETAILS</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 3: TECHNICAL SKILLS & STACK                              -->
+    <!-- ================================================================= -->
+    <header class="section-banner hairline-b" id="skills">
+      <div class="section-banner-main">
+        <div class="banner-title-wrap">
+          <h2 class="section-title-large">TECHNICAL SKILLS &amp; STACK</h2>
+        </div>
+        <p class="section-description">
+          Core imperative &amp; declarative languages, data structures, algorithms, object-oriented systems, web design, and developer tooling.
+        </p>
+      </div>
+    </header>
+
+    <!-- Pinned Scroll Deck Track (Provides scroll distance for card transitions) -->
+    <section class="skills-scroll-deck-container hairline-b" id="skills-deck-track" aria-label="Technical Skills Interactive Deck">
+      
+      <!-- Viewport Stage: Pinned in viewport while scrolling through deck track -->
+      <div class="skills-sticky-stage" id="skills-sticky-stage">
+
+        <!-- Centered Card Arena -->
+        <div class="deck-viewport-arena" id="deck-viewport-arena">
+          
+          <!-- Card 1: Programming Languages -->
+          <article class="skills-deck-card active hairline-all" data-card-index="0" id="deck-card-0">
+            <div class="deck-card-glow"></div>
+            
+            <div class="deck-card-header hairline-b">
+              <span class="card-tag">STACK_01</span>
+            </div>
+
+            <div class="deck-card-body">
+              <h3 class="deck-category-title">PROGRAMMING LANGUAGES</h3>
+
+              <div class="deck-chips-grid">
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">LANG_01</span>
+                    <span class="chip-name">Java</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">LANG_02</span>
+                    <span class="chip-name">Python</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">LANG_03</span>
+                    <span class="chip-name">C</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">LANG_04</span>
+                    <span class="chip-name">SQL</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Core Computer Science -->
+          <article class="skills-deck-card hairline-all" data-card-index="1" id="deck-card-1">
+            <div class="deck-card-glow"></div>
+            
+            <div class="deck-card-header hairline-b">
+              <span class="card-tag">STACK_02</span>
+            </div>
+
+            <div class="deck-card-body">
+              <h3 class="deck-category-title">CORE COMPUTER SCIENCE</h3>
+
+              <div class="deck-chips-grid">
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">CS_01</span>
+                    <span class="chip-name">Data Structures &amp; Algorithms (DSA)</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">CS_02</span>
+                    <span class="chip-name">Object-Oriented Programming (OOP)</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">CS_03</span>
+                    <span class="chip-name">Computer Architecture</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">CS_04</span>
+                    <span class="chip-name">DBMS</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Web Development -->
+          <article class="skills-deck-card hairline-all" data-card-index="2" id="deck-card-2">
+            <div class="deck-card-glow"></div>
+            
+            <div class="deck-card-header hairline-b">
+              <span class="card-tag">STACK_03</span>
+            </div>
+
+            <div class="deck-card-body">
+              <h3 class="deck-category-title">WEB DEVELOPMENT &amp; TOOLS</h3>
+
+              <div class="deck-chips-grid">
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">WEB_01</span>
+                    <span class="chip-name">HTML</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">WEB_02</span>
+                    <span class="chip-name">CSS</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Developer Tools -->
+          <article class="skills-deck-card hairline-all" data-card-index="3" id="deck-card-3">
+            <div class="deck-card-glow"></div>
+            
+            <div class="deck-card-header hairline-b">
+              <span class="card-tag">STACK_04</span>
+            </div>
+
+            <div class="deck-card-body">
+              <h3 class="deck-category-title">DEVELOPER TOOLS</h3>
+
+              <div class="deck-chips-grid">
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">TOOL_01</span>
+                    <span class="chip-name">VS Code</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">TOOL_02</span>
+                    <span class="chip-name">Google Cloud Platform</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+                <div class="deck-chip hairline-all">
+                  <div class="chip-left">
+                    <span class="chip-code">TOOL_03</span>
+                    <span class="chip-name">GitHub</span>
+                  </div>
+                  <span class="chip-status-dot"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION 4: EDUCATION & CREDENTIALS                                -->
+    <!-- ================================================================= -->
+    <header class="section-banner hairline-b" id="education">
+      <div class="section-banner-top hairline-b">
+        <div class="banner-tag">
+          <span class="deck-pulse-dot accent-emerald"></span>
+          <span class="mono-label">SECTOR_04 // ACADEMIC_RECORD</span>
+        </div>
+        <div class="banner-coords">
+          <span class="mono-coords" id="journey-telemetry-status">JOURNEY_TRAJECTORY // [00% INITIALIZING]</span>
+        </div>
+      </div>
+      <div class="section-banner-main">
+        <div class="banner-title-wrap">
+          <h2 class="section-title-large">EDUCATION &amp; CREDENTIALS</h2>
+        </div>
+        <p class="section-description">
+          Formal engineering degree at B.P. Poddar Institute, secondary schooling, cross-disciplinary certifications, and spoken languages.
+        </p>
+      </div>
+    </header>
+
+    <section class="snake-journey-section hairline-b" id="education-journey-section" aria-label="Academic and Certification Matrix">
+
+      <!-- The Snake Arena containing the SVG Canvas & Multi-Stage Stations -->
+      <div class="snake-journey-arena" id="snake-journey-arena">
+
+        <!-- Top Origin Anchor: start the line from top-center without the intro card -->
+        <div class="journey-start-origin" id="journey-start-origin">
+          <div class="snake-milestone-anchor" data-step-anchor="start" aria-hidden="true">
+            <div class="milestone-ping"></div>
+            <div class="milestone-dot"></div>
+          </div>
+        </div>
+
+        <!-- Full-arena SVG Canvas with S-Curve and Glider Head -->
+        <svg class="snake-canvas" id="snake-canvas" preserveAspectRatio="none">
+          <defs>
+            <filter id="glider-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <linearGradient id="snake-line-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+              <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0.95" />
+            </linearGradient>
+          </defs>
+          
+          <!-- Background guideline track (faint grey curve) -->
+          <path class="snake-ghost-path" id="snake-ghost-path" d="" />
+          <!-- Animated drawn emerald line -->
+          <path class="snake-fill-path" id="snake-fill-path" d="" />
+          <!-- Glowing Snake Glider Head -->
+          <g class="snake-glider-group" id="snake-glider-group" transform="translate(-100, -100)">
+            <circle class="snake-head-halo" r="18" />
+            <circle class="snake-head-pulse" r="10" />
+            <circle class="snake-head-core" r="4.5" />
+          </g>
+        </svg>
+
+        <!-- Stage 1: B.Tech CSE (card on left / center, anchor on right) -->
+        <div class="journey-stage stage-left glider-active" data-step-index="0" id="journey-step-0">
+          <div class="journey-stage-card">
+            <div class="card-meta-top hairline-b">
+              <span class="mono-meta time-pill">2024 – 2028</span>
+              <span class="status-pill accent-emerald">CURRENTLY_ENROLLED</span>
+            </div>
+            <div class="card-content-body">
+              <span class="mono-label card-type-label">UNDERGRADUATE_DEGREE // CSE</span>
+              <h3 class="card-institution-title">B.P. PODDAR INSTITUTE OF MANAGEMENT AND TECHNOLOGY</h3>
+              <p class="card-degree-desc">Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering</p>
+              <p class="card-focus-text">
+                Core Computer Science &amp; Engineering Undergraduate Curriculum covering algorithmic complexity, system abstractions, object-oriented architecture, and relational data structures.
+              </p>
+              <div class="card-tags-flex">
+                <span class="stage-tag">Data Structures &amp; Algorithms</span>
+                <span class="stage-tag">OOP</span>
+                <span class="stage-tag">Computer Architecture</span>
+                <span class="stage-tag">DBMS</span>
+                <span class="stage-tag">AI &amp; Cloud</span>
+              </div>
+            </div>
+          </div>
+          <div class="snake-milestone-anchor" data-step-anchor="0">
+            <div class="milestone-ping"></div>
+            <div class="milestone-ring"></div>
+            <div class="milestone-dot"></div>
+          </div>
+        </div>
+
+        <!-- Stage 2: Scottish Church Collegiate School (card on right / center, anchor on left) -->
+        <div class="journey-stage stage-right glider-future" data-step-index="1" id="journey-step-1">
+          <div class="snake-milestone-anchor" data-step-anchor="1">
+            <div class="milestone-ping"></div>
+            <div class="milestone-ring"></div>
+            <div class="milestone-dot"></div>
+          </div>
+          <div class="journey-stage-card">
+            <div class="card-meta-top hairline-b">
+              <span class="mono-meta time-pill">2010 – 2023</span>
+              <span class="status-pill">COMPLETED // GRADUATED</span>
+            </div>
+            <div class="card-content-body">
+              <span class="mono-label card-type-label">ACADEMIC_FOUNDATION // WBCHSE</span>
+              <h3 class="card-institution-title">THE SCOTTISH CHURCH COLLEGIATE SCHOOL</h3>
+              <p class="card-degree-desc">Higher Secondary &amp; Secondary Education</p>
+              <p class="card-focus-text">
+                Foundational Academic Discipline, Mathematical Rigor, and Pure Sciences curriculum fostering scientific inquiry, quantitative analysis, and academic consistency.
+              </p>
+              <div class="card-tags-flex">
+                <span class="stage-tag">Pure Mathematics</span>
+                <span class="stage-tag">Physics</span>
+                <span class="stage-tag">Computer Science</span>
+                <span class="stage-tag">Academic Rigor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3: Digital Marketing (card on left / center, anchor on right) -->
+        <div class="journey-stage stage-left glider-future" data-step-index="2" id="journey-step-2">
+          <div class="journey-stage-card">
+            <div class="card-meta-top hairline-b">
+              <span class="mono-meta time-pill">COURSEWORK</span>
+              <span class="status-pill">CERTIFICATE_ISSUED</span>
+            </div>
+            <div class="card-content-body">
+              <span class="mono-label card-type-label">PROFESSIONAL_CERTIFICATION // APPLIED</span>
+              <h3 class="card-institution-title">THE COMPLETE DIGITAL MARKETING COURSE</h3>
+              <p class="card-degree-desc">12 Courses in 1 Comprehensive Program</p>
+              <p class="card-focus-text">
+                Cross-Disciplinary Digital Strategy, Market Analytics, Conversion Optimization, and Web Presence Scaling for high-impact product engineering.
+              </p>
+              <div class="card-tags-flex">
+                <span class="stage-tag">Market Analytics</span>
+                <span class="stage-tag">Growth Architecture</span>
+                <span class="stage-tag">SEO &amp; SEM</span>
+                <span class="stage-tag">User Acquisition</span>
+              </div>
+            </div>
+          </div>
+          <div class="snake-milestone-anchor" data-step-anchor="2">
+            <div class="milestone-ping"></div>
+            <div class="milestone-ring"></div>
+            <div class="milestone-dot"></div>
+          </div>
+        </div>
+
+        <!-- Stage 4: Communication Languages (Final Terminal Milestone - card on right / center, anchor on left) -->
+        <div class="journey-stage stage-right glider-future stage-terminal" data-step-index="3" id="journey-step-3">
+          <div class="snake-milestone-anchor" data-step-anchor="3">
+            <div class="milestone-ping"></div>
+            <div class="milestone-ring"></div>
+            <div class="milestone-dot"></div>
+          </div>
+          <div class="journey-stage-card">
+            <div class="card-meta-top hairline-b">
+              <span class="mono-meta time-pill">TRILINGUAL</span>
+              <span class="status-pill accent-emerald">PROFICIENT // FLUENT</span>
+            </div>
+            <div class="card-content-body">
+              <span class="mono-label card-type-label">GLOBAL_COLLABORATION // HUMAN_LANGUAGES</span>
+              <h3 class="card-institution-title">COMMUNICATION LANGUAGES</h3>
+              <p class="card-degree-desc">English (Fluent) • Bengali (Fluent) • Hindi (Basic)</p>
+              <p class="card-focus-text">
+                Multilingual Collaboration, Technical Documentation, Cross-Border Remote Engineering, and Synchronous Team Communication.
+              </p>
+              <div class="card-tags-flex">
+                <span class="stage-tag">English // Professional Working</span>
+                <span class="stage-tag">Bengali // Native Proficiency</span>
+                <span class="stage-tag">Hindi // Conversational Basis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- FOOTER (~80px, hairline-t, strict monochrome)                     -->
+    <!-- ================================================================= -->
+    <footer class="system-footer hairline-t">
+      <div class="footer-main-row">
+        <div class="footer-col-left hairline-r">
+          <a href="#hero" class="footer-brand-link" aria-label="Sayan Kundu — Return to top of page">
+            SAYAN KUNDU // PORTFOLIO
+          </a>
+          <span class="mono-meta">B.TECH CSE (2024–2028) // B.P. PODDAR INSTITUTE OF MANAGEMENT &amp; TECHNOLOGY</span>
+          <span class="mono-meta copyright-tag">© <span id="copyright-year">2026</span> SAYAN KUNDU. ALL RIGHTS RESERVED.</span>
+        </div>
+
+        <div class="footer-col-mid hairline-r">
+          <div class="footer-specs">
+            <span class="mono-meta">
+              COMMUNICATION: 
+              <a href="tel:+919836716634" class="footer-link" title="Click to call">+91 9836716634</a> // 
+              <a href="mailto:sayankundu094@gmail.com" class="footer-link" title="Click to send email">sayankundu094@gmail.com</a>
+            </span>
+            <span class="mono-meta">
+              SOCIAL_CHANNELS: 
+              <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="footer-link">GITHUB</a> // 
+              <a href="https://www.linkedin.com/in/sayan-kundu-drex/" target="_blank" rel="noopener noreferrer" class="footer-link">LINKEDIN</a> // 
+              <a href="https://www.instagram.com/drex_sayan/" target="_blank" rel="noopener noreferrer" class="footer-link">INSTAGRAM</a>
+            </span>
+            <span class="mono-meta">GEOGRAPHY: KOLKATA, WEST BENGAL, INDIA [IST // UTC+05:30]</span>
+          </div>
+        </div>
+
+        <div class="footer-col-right">
+          <a href="#hero" class="back-to-top mono-action-btn glow-cta-btn" id="footer-back-to-top" aria-label="Return to top of page">
+            <span>RETURN_TO_TOP</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true" style="transform: rotate(-90deg);">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /viewport-wrapper -->
+
+  <!-- ================================================================= -->
+  <!-- MODAL: GET IN TOUCH DIALOG (Brutalist hairline overlay)           -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop" id="access-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box hairline-all">
+      <div class="modal-header hairline-b">
+        <div class="modal-title-wrap">
+          <span class="status-dot"></span>
+          <span class="modal-title">DIRECT_COMMUNICATION_PORTAL</span>
+        </div>
+        <button class="modal-close-btn" id="close-access-modal" aria-label="Close modal">
+          [ESC]
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-notice">
+          <p class="mono-meta">DISPATCH TO: SAYAN KUNDU // CSE UNDERGRADUATE</p>
+          <p class="modal-p">Connect directly regarding software engineering internships, technical collaborations, or technical project inquiries.</p>
+          
+          <div class="modal-quick-info hairline-t">
+            <div class="quick-info-item">
+              <span class="mono-label">PHONE:</span>
+              <a href="tel:+919836716634" class="modal-link-val" title="Click to call">+91 9836716634</a>
+            </div>
+            <div class="quick-info-item">
+              <span class="mono-label">EMAIL:</span>
+              <a href="mailto:sayankundu094@gmail.com" class="modal-link-val" title="Click to send email">sayankundu094@gmail.com</a>
+            </div>
+            <div class="quick-info-item">
+              <span class="mono-label">LINKEDIN:</span>
+              <a href="https://www.linkedin.com/in/sayan-kundu-drex/" target="_blank" rel="noopener noreferrer" class="modal-link-val">/in/sayan-kundu-drex</a>
+            </div>
+            <div class="quick-info-item">
+              <span class="mono-label">GITHUB:</span>
+              <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="modal-link-val">@drex-sayan</a>
+            </div>
+            <div class="quick-info-item">
+              <span class="mono-label">INSTAGRAM:</span>
+              <a href="https://www.instagram.com/drex_sayan/" target="_blank" rel="noopener noreferrer" class="modal-link-val">@drex_sayan</a>
+            </div>
+            <div class="quick-info-item">
+              <span class="mono-label">LOCATION:</span>
+              <span class="modal-link-val">Kolkata, West Bengal, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Direct Actions (No input form) -->
+        <div class="modal-actions-direct hairline-t">
+          <a href="mailto:sayankundu094@gmail.com" class="modal-direct-btn glow-cta-btn">
+            <span>SEND EMAIL DIRECTLY</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+919836716634" class="modal-direct-btn modal-btn-secondary">
+            <span>CALL DIRECTLY</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="modal-footer hairline-t">
+        <span class="mono-meta">DIRECT_VERIFIED_CONTACT // RESPONSE_TIME_&lt;_24H</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL: PROJECT DOSSIER MODAL (Single-Project Specific Details)    -->
+  <!-- ================================================================= -->
+  <div class="modal-backdrop" id="project-dossier-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box project-dossier-box hairline-all">
+      <!-- Modal Header without other project tabs -->
+      <div class="dossier-header hairline-b">
+        <div class="dossier-header-brand">
+          <span class="status-dot"></span>
+          <span class="mono-meta" id="dossier-header-label">PROJECT_SPECIFICATION</span>
+        </div>
+        <button class="modal-close-btn" id="close-dossier-modal" aria-label="Close dossier">
+          [ESC]
+        </button>
+      </div>
+
+      <!-- Tab 1: Cognitio -->
+      <div class="dossier-tab-pane project-theme-cyan active" id="pane-cognitio">
+        <div class="dossier-hero-meta">
+          <span class="project-index-tag">PROJECT_01 // MAY 2026</span>
+          <span class="mono-coords">[HACKSPHERE_2026]</span>
+        </div>
+        
+        <div class="award-ribbon hairline-all">
+          <span class="award-star">★</span>
+          <span class="award-text">AWARD: RANKED 5TH OUT OF 32 TEAMS IN HACKSPHERE [TECHNO INTERNATIONAL NEW TOWN]</span>
+        </div>
+
+        <h3 class="dossier-title">COGNITIO: REAL-TIME CODE ANALYZER &amp; LOGICAL ERROR DETECTOR</h3>
+
+        <div class="project-tags-wrap">
+          <span class="tech-tag">Javascript</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag accent-tech-tag">Gemini API</span>
+          <span class="tech-tag">Browser Extension</span>
+        </div>
+
+        <div class="dossier-bullets">
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>Built a real-time code analyzer extension to detect logical mistakes, inefficient code and risky coding patterns and then explains bugs in simple human-readable language.</span>
+          </p>
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>Engineered backend calculations to calculate a comprehensive code quality score, accompanied by identified problems (if any) to help users understand code better and improve learning experience.</span>
+          </p>
+        </div>
+
+        <div class="dossier-actions">
+          <!-- Sayan: Add specific repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="dossier-action-btn dossier-btn-primary glow-cta-btn">
+            <span>VIEW_GITHUB_REPOSITORY</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="dossier-action-btn dossier-btn-secondary glow-cta-btn" id="dossier-contact-btn-1">
+            <span>INQUIRE_ABOUT_SYSTEM</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab 2: AI Air Quality -->
+      <div class="dossier-tab-pane project-theme-emerald" id="pane-aqi">
+        <div class="dossier-hero-meta">
+          <span class="project-index-tag">PROJECT_02 // APRIL 2026</span>
+          <span class="mono-coords">[TECHSTORM_2.26]</span>
+        </div>
+        
+        <div class="award-ribbon hairline-all">
+          <span class="award-star">★</span>
+          <span class="award-text">AWARD: WON 1ST RUNNER-UP IN TECHNOMANIA: TECHSTORM 2.26 OUT OF 28 TEAMS</span>
+        </div>
+
+        <h3 class="dossier-title">AI-BASED AIR QUALITY MONITORING AND PREDICTION SYSTEM</h3>
+
+        <div class="project-tags-wrap">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag accent-tech-tag">Microcontroller_IoT</span>
+          <span class="tech-tag">ML Prediction</span>
+        </div>
+
+        <div class="dossier-bullets">
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>Integrated hardware—O3, CO, particulate matter, temperature, humidity sensors, microcontroller—and software—Python based ML model—to implement hyper-local real-time monitoring of AQI.</span>
+          </p>
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>Collected data through sensors and processed it to compute current AQI and trained ML model uses processed data to predict future AQI trends.</span>
+          </p>
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>Provided health recommendations based on current AQI and generated AQI graphs for metropolitan cities.</span>
+          </p>
+        </div>
+
+        <div class="dossier-actions">
+          <!-- Sayan: Add specific repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="dossier-action-btn dossier-btn-primary glow-cta-btn">
+            <span>VIEW_GITHUB_REPOSITORY</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="dossier-action-btn dossier-btn-secondary glow-cta-btn" id="dossier-contact-btn-2">
+            <span>INQUIRE_ABOUT_SYSTEM</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab 3: NorthStar -->
+      <div class="dossier-tab-pane project-theme-violet" id="pane-northstar">
+        <div class="dossier-hero-meta">
+          <span class="project-index-tag">PROJECT_03 // NOVEMBER 2026</span>
+          <span class="mono-coords">[NARRATIVE_INTELLIGENCE]</span>
+        </div>
+        
+        <div class="award-ribbon hairline-all">
+          <span class="award-star">◆</span>
+          <span class="award-text">MULTI-AGENT WORKSPACE // 3 SYNCHRONIZED MEMORY TIERS</span>
+        </div>
+
+        <h3 class="dossier-title">NORTHSTAR — AI CONTINUITY GUARDIAN</h3>
+
+        <div class="project-tags-wrap">
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">SQLAlchemy 2.0</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">React with Vite</span>
+          <span class="tech-tag accent-tech-tag">ChromaDB / NetworkX</span>
+        </div>
+
+        <div class="dossier-bullets">
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>NorthStar is a browser-based intelligent writing workspace purpose-built for novelists, screenwriters, and creative narrative architects. While generic AI writing tools focus on generating the next sentence, NorthStar focuses on remembering every sentence previously established as canon.</span>
+          </p>
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>Coordinates three synchronized memory tiers: <strong>1. Structured Memory</strong> (PostgreSQL / SQLite), <strong>2. Semantic Memory</strong> (ChromaDB), and <strong>3. Graph Memory</strong> (NetworkX).</span>
+          </p>
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span><strong>Core Guarantees:</strong> Author Sovereignty, Evidence-Backed Warnings, Multi-Agent Narrative Intelligence, and Confidential Creative Vault.</span>
+          </p>
+        </div>
+
+        <div class="dossier-actions">
+          <!-- Sayan: Add specific repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="dossier-action-btn dossier-btn-primary glow-cta-btn">
+            <span>VIEW_GITHUB_REPOSITORY</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="dossier-action-btn dossier-btn-secondary glow-cta-btn" id="dossier-contact-btn-3">
+            <span>INQUIRE_ABOUT_SYSTEM</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab 4: FloodGuard -->
+      <div class="dossier-tab-pane project-theme-amber" id="pane-floodguard">
+        <div class="dossier-hero-meta">
+          <span class="project-index-tag">PROJECT_04 // OCTOBER 2026</span>
+          <span class="mono-coords">[DISASTER_PREPAREDNESS]</span>
+        </div>
+        
+        <div class="award-ribbon hairline-all">
+          <span class="award-star">◆</span>
+          <span class="award-text">DISASTER PREPAREDNESS // RISK FUSION ENGINE &amp; GEOFENCING</span>
+        </div>
+
+        <h3 class="dossier-title">FLOODGUARD — FLASH FLOOD &amp; LANDSLIDE EARLY WARNING SYSTEM</h3>
+
+        <div class="project-tags-wrap">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express.js</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Scikit-learn</span>
+          <span class="tech-tag accent-tech-tag">MySQL</span>
+        </div>
+
+        <div class="dossier-bullets">
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span>FloodGuard is an intelligent disaster monitoring and early warning platform designed to detect, predict and assess flash flood and landslide risks, particularly in vulnerable hilly and mountainous regions. It combines environmental observations, machine learning and geographical risk analysis to support early disaster preparedness.</span>
+          </p>
+          <p class="desc-bullet">
+            <span class="bullet-sym">▸</span>
+            <span><strong>Risk Fusion Engine:</strong> Integrates outputs from the monitoring and prediction modules to generate geographical risk zones (Red, Yellow and Green), supported by location-based geofencing and alert mechanisms.</span>
+          </p>
+        </div>
+
+        <div class="dossier-actions">
+          <!-- Sayan: Add specific repository URL here -->
+          <a href="https://github.com/drex-sayan" target="_blank" rel="noopener noreferrer" class="dossier-action-btn dossier-btn-primary glow-cta-btn">
+            <span>VIEW_GITHUB_REPOSITORY</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+          <button type="button" class="dossier-action-btn dossier-btn-secondary glow-cta-btn" id="dossier-contact-btn-4">
+            <span>INQUIRE_ABOUT_SYSTEM</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-footer hairline-t">
+        <span class="mono-meta">CLICK TABS ABOVE TO SWITCH SYSTEMS // USE ESC TO CLOSE</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="ghost-cursor.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

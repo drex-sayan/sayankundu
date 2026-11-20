@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: COORDINATE_NOT_FOUND // SAYAN KUNDU</title>
+  <meta name="description" content="404 — The requested page or sector coordinate could not be found on Sayan Kundu's portfolio.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,900;1,900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-hero-zone {
+      min-height: calc(100vh - var(--nav-height) - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .error-code-huge {
+      font-family: var(--font-headline);
+      font-size: clamp(6rem, 20vw, 16rem);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+      color: #ffffff;
+      margin: 16px 0;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    .error-card-box {
+      width: min(680px, 92vw);
+      background-color: #070709;
+      padding: 36px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .error-desc {
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.65);
+      max-width: 520px;
+    }
+
+    .error-btn-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .error-action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: var(--transition-standard);
+      cursor: pointer;
+    }
+
+    .error-btn-primary {
+      background-color: #ffffff;
+      color: #000000;
+      border: 1px solid #ffffff;
+    }
+
+    .error-btn-primary:hover {
+      background-color: var(--accent-color);
+      color: #ffffff;
+      border-color: var(--accent-color);
+    }
+
+    .error-btn-secondary {
+      background-color: transparent;
+      color: #ffffff;
+      border: var(--hairline-width) solid var(--hairline-color);
+    }
+
+    .error-btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Global Noise Texture Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Main Architectural Container -->
+  <div class="viewport-wrapper hairline-l hairline-r">
+
+    <!-- Navigation Bar -->
+    <header class="navbar hairline-b">
+      <div class="nav-left">
+        <a href="index.html" class="brand-link" aria-label="Sayan Kundu — Return to home page">
+          <span class="brand-name">SAYAN KUNDU</span>
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="version-tag">PORTFOLIO // HOME</span>
+        </a>
+      </div>
+
+      <div class="nav-center hairline-l hairline-r">
+        <span class="mono-meta">STATUS_CODE_404 // COORDINATE_ERROR</span>
+      </div>
+
+      <div class="nav-right">
+        <a href="index.html" class="pill-btn glow-cta-btn">
+          <span>RETURN TO HOME</span>
+          <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Error Hero Zone -->
+    <main class="error-hero-zone hairline-b">
+      <div class="error-card-box hairline-all">
+        <div class="mono-coords" style="color: var(--accent-color);">
+          [SYS_ERR_404 // ROUTE_UNRESOLVED]
+        </div>
+
+        <h1 class="error-code-huge">404</h1>
+
+        <div class="mono-label" style="letter-spacing: 0.25em; font-size: 13px;">
+          SECTOR_COORDINATE_DOES_NOT_EXIST
+        </div>
+
+        <p class="error-desc">
+          The requested trajectory, resource address, or blueprint sector cannot be resolved within this portfolio matrix. Return to the primary sector to explore verified systems and engineering dossiers.
+        </p>
+
+        <div class="error-btn-group">
+          <a href="index.html" class="error-action-btn error-btn-primary glow-cta-btn">
+            <span>RETURN_TO_HOME</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="index.html#projects" class="error-action-btn error-btn-secondary glow-cta-btn">
+            <span>EXPLORE_PROJECTS</span>
+            <svg class="btn-arrow-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="system-footer">
+      <div class="footer-col-left hairline-r">
+        <a href="index.html" class="footer-brand-link">SAYAN KUNDU // PORTFOLIO</a>
+        <span class="mono-meta">B.TECH CSE (2024–2028) // B.P. PODDAR INSTITUTE</span>
+      </div>
+
+      <div class="footer-col-mid hairline-r">
+        <div class="footer-specs">
+          <span class="mono-meta">CONTACT: <a href="tel:+919836716634" class="footer-link">+91 9836716634</a> // <a href="mailto:sayankundu094@gmail.com" class="footer-link">sayankundu094@gmail.com</a></span>
+          <span class="mono-meta">© <span id="copyright-year">2026</span> SAYAN KUNDU. ALL RIGHTS RESERVED.</span>
+        </div>
+      </div>
+
+      <div class="footer-col-right">
+        <a href="index.html" class="back-to-top mono-action-btn">
+          HOME_PRIMARY_↑
+        </a>
+      </div>
+    </footer>
+
+  </div><!-- /viewport-wrapper -->
+
+  <script>
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    document.querySelectorAll('.glow-cta-btn, .pill-btn, .error-action-btn').forEach(btn => {
+      btn.classList.add('glow-cta-btn');
+      btn.addEventListener('pointermove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        btn.style.setProperty('--mouse-x', `${(e.clientX - rect.left).toFixed(1)}px`);
+        btn.style.setProperty('--mouse-y', `${(e.clientY - rect.top).toFixed(1)}px`);
+      });
+      btn.addEventListener('pointerleave', () => {
+        btn.style.removeProperty('--mouse-x');
+        btn.style.removeProperty('--mouse-y');
+      });
+    });
+  </script>
+</body>
+</html>
